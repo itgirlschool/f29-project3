@@ -59,6 +59,9 @@
         font-size: 15px;
         border: 2px solid #162E3C;
     }
+    .button__view:hover {
+        background-color: #DDF0A7;
+    }
     .title__title {
         text-align: center;
         margin-top: 15px;
@@ -121,6 +124,11 @@
         align-items:center;
         justify-content: space-around;
         margin: 1em;
+    }
+    .readmore_style:hover {
+        background-color: #DDF0A7;
+        border-radius: 32px;
+        padding-right:5px;
     }
     }
 
@@ -186,6 +194,9 @@
     font-size: 15px;
     border: 2px solid #162E3C;
 }
+.button__view:hover {
+    background-color: #DDF0A7;
+}
 .title__title {
     margin-top: 15px;
     margin-bottom: 24px;
@@ -245,5 +256,10 @@
     align-items:center;
     justify-content: space-around;
     margin: 1em;
+}
+.readmore_style:hover {
+    background-color: #DDF0A7;
+    border-radius: 32px;
+    padding-right:5px;
 }
 }
