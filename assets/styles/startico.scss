@@ -135,3 +135,24 @@ header {
         }
     }
 }
+/* Startup*/
+.startup{
+    &body{}
+    &header{}
+    &title{ }
+    &text{}
+    &row{}
+    &columns{}
+    &interaction{}
+    &button{}
+    &link{}
+}
+.startup-decor{}
+.item-startup{
+    &icon{}
+    &title{}
+    &text{}
+}
+.btn{} 
+.btn-white{}
+/*Startup*/
