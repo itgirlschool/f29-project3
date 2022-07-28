@@ -1,0 +1,44 @@
+.startup__body {
+    max-width: 1280px;
+    max-height: 898px;
+    margin: 128px;
+    background-color: #DDF0A7;
+    border-radius: 48px;
+    color: #162E3C;
+
+}
+
+
+.startup__header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.startup__title {
+
+    width: 704px;
+    height: 96px;
+    margin: 0 0 27px 0;
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+
+
+}
+
+.startup__text {
+
+    width: 744px;
+    height: 54px;
+
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+}
