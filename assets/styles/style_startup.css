@@ -1,10 +1,11 @@
 .startup__body {
-    max-width: 1280px;
-    max-height: 898px;
-    margin: 128px;
+    width: 1280px;
+    height: 898px;
+
     background-color: #DDF0A7;
     border-radius: 48px;
     color: #162E3C;
+    margin: 128px auto;
 
 }
 
@@ -41,4 +42,120 @@
     font-size: 18px;
     line-height: 27px;
     text-align: center;
+}
+
+.startup__row {
+    display: flex;
+    justify-content: center;
+
+}
+
+.startup__column {
+    max-width: 363px;
+    max-height: 304px;
+    border-radius: 24px;
+    background-color: #162E3C;
+    color: #FFFFFF;
+    text-align: center;
+
+}
+
+.startup__column_first {
+    margin: 62px 32px 48px 64px;
+}
+
+.startup__column_second {
+    margin: 62px 31px 48px 0px;
+}
+
+.startup__column_third {
+    margin: 62px 64px 48px 0px;
+}
+
+.item-startup {}
+
+.item-startup__icon_first {
+    width: 80px;
+    height: 80px;
+    margin: 42px auto 34px auto;
+}
+
+.item-startup__icon_second {
+    width: 80px;
+    height: 80px;
+    margin: 42px auto 34px auto;
+}
+
+.item-startup__icon_third {
+    width: 80px;
+    height: 80px;
+    margin: 42px auto 34px auto;
+}
+
+.item-startup__title {
+    font-family: Fraunces;
+    font-weight: 400;
+    font-size: 20px;
+    margin: 0px 0px 17px 0px;
+}
+
+.item-startup__text {
+
+    font-style: Grotesk;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.item-startup__text_first {
+    width: 255px;
+    margin: 0px 54px 31px 54px;
+}
+
+.item-startup__text_second {
+    width: 279px;
+    margin: 0px 43px 31px 41px;
+}
+
+.item-startup__text_third {
+    width: 278px;
+    margin: 0px 42px 31px 43px;
+}
+
+/*<a class="btn btn-pistachio"href="#">Get started</a>
+<a class="btn btn-arrow"href="#">Try for free</a>
+<a href="#"class="header__link btn btn-white">Log in</a>
+<a href="#"class="header__link btn btn-black">Try for free</a>*/
+
+.startup__interaction {
+    text-align: center;
+    margin: 0px auto 128px auto;
+}
+
+.startup__button {
+
+    border: 2px solid #162E3C;
+    border-radius: 64px;
+    padding: 1rem;
+    margin: 0 1rem;
+    text-decoration: none;
+    font-family: 'Space Grotesk', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    color: #162E3C;
+}
+
+.startup__link {
+    text-decoration: none;
+    white-space: nowrap;
+    margin: 1rem;
+    color: #162E3C;
+    font-family: 'Space Grotesk', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.btn-arrow {
+    background: url(/assets/images/black-arrow.png) center right no-repeat;
+    padding-right: 1.5rem;
+
 }
