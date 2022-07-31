@@ -1,6 +1,6 @@
 .startup__body {
-    width: 1280px;
-    height: 898px;
+    width: 80vw;
+    height: 49rem;
 
     background-color: #DDF0A7;
     border-radius: 48px;
@@ -8,6 +8,14 @@
     margin: 128px auto;
 
 }
+
+.startup__decor {
+
+    width: 7.5rem;
+    height: 5.625rem;
+
+}
+
 
 
 .startup__header {
@@ -18,14 +26,14 @@
 
 .startup__title {
 
-    width: 704px;
-    height: 96px;
+    width: 40rem;
+    height: 6rem;
     margin: 0 0 27px 0;
     font-family: 'Fraunces';
     font-style: normal;
     font-weight: 400;
-    font-size: 40px;
-    line-height: 48px;
+    font-size: 2.5rem;
+    line-height: 3rem;
     text-align: center;
 
 
@@ -33,8 +41,8 @@
 
 .startup__text {
 
-    width: 744px;
-    height: 54px;
+    width: 46.5rem;
+    height: 3.375rem;
 
     font-family: 'Space Grotesk';
     font-style: normal;
@@ -47,56 +55,57 @@
 .startup__row {
     display: flex;
     justify-content: center;
-
 }
 
 .startup__column {
-    max-width: 363px;
-    max-height: 304px;
+    max-width: 24vw;
+    max-height: 18.375rem;
     border-radius: 24px;
     background-color: #162E3C;
     color: #FFFFFF;
-    text-align: center;
+
 
 }
 
 .startup__column_first {
-    margin: 62px 32px 48px 64px;
+    margin: 3.875rem 0rem 3rem 2rem;
 }
 
 .startup__column_second {
-    margin: 62px 31px 48px 0px;
+    margin: 3.875rem 1rem 3rem 1rem;
 }
 
 .startup__column_third {
-    margin: 62px 64px 48px 0px;
+    margin: 3.875rem 2rem 3rem 0rem;
 }
 
-.item-startup {}
+.item-startup {
+    text-align: center;
+}
 
 .item-startup__icon_first {
-    width: 80px;
-    height: 80px;
-    margin: 42px auto 34px auto;
+    width: 5rem;
+    height: 5rem;
+    margin: 2rem auto 1.5rem auto;
 }
 
 .item-startup__icon_second {
-    width: 80px;
-    height: 80px;
-    margin: 42px auto 34px auto;
+    width: 5rem;
+    height: 5rem;
+    margin: 2rem auto 1.5rem auto;
 }
 
 .item-startup__icon_third {
-    width: 80px;
-    height: 80px;
-    margin: 42px auto 34px auto;
+    width: 5rem;
+    height: 5rem;
+    margin: 2rem auto 1.5rem auto;
 }
 
 .item-startup__title {
     font-family: Fraunces;
     font-weight: 400;
-    font-size: 20px;
-    margin: 0px 0px 17px 0px;
+    font-size: 17px;
+    margin: 0rem 0rem 1.06rem 0rem;
 }
 
 .item-startup__text {
@@ -104,31 +113,14 @@
     font-style: Grotesk;
     font-weight: 400;
     font-size: 15px;
+    margin: 0px 1.25rem 1.9375rem 1.25rem;
+
 }
 
-.item-startup__text_first {
-    width: 255px;
-    margin: 0px 54px 31px 54px;
-}
-
-.item-startup__text_second {
-    width: 279px;
-    margin: 0px 43px 31px 41px;
-}
-
-.item-startup__text_third {
-    width: 278px;
-    margin: 0px 42px 31px 43px;
-}
-
-/*<a class="btn btn-pistachio"href="#">Get started</a>
-<a class="btn btn-arrow"href="#">Try for free</a>
-<a href="#"class="header__link btn btn-white">Log in</a>
-<a href="#"class="header__link btn btn-black">Try for free</a>*/
 
 .startup__interaction {
     text-align: center;
-    margin: 0px auto 128px auto;
+    margin: 0px auto 8rem auto;
 }
 
 .startup__button {
