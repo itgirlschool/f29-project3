@@ -27,14 +27,7 @@ $screen-medium: 715px;
 
 $color-success: $pistachio;
 
-@mixin btn {
-    font-family:
-        $font-family-sans-serif;
-    border: 1px solid;
-    border-radius: 20px;
 
-
-}
 
 
 html {
@@ -273,8 +266,10 @@ header {
         align-items: center;
 
         @include media-breakpoint-up($grid-breakpoint-md) {
-            width: 80vw;
-            height: 40vw;
+            width: 85vw;
+            height: 42.5vw;
+            max-width: 1296px;
+            max-height: 648px;
         }
 
         & .video-button {
@@ -295,3 +290,160 @@ header {
     }
 }
 
+
+.speed {
+    background-image: url(/assets/images/waves.png);
+    background-position: top right;
+    background-repeat: no-repeat;
+
+    // .speed__container
+
+    &__container {
+        max-width: $container-max-width;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 2em;
+
+        @include media-breakpoint-up($grid-breakpoint-md) {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+        }
+    }
+
+    // .speed__image
+
+    &__image {
+        margin: auto;
+        padding-right: 2.5em;
+        grid-row: 1;
+        grid-column: 1;
+        position: relative;
+
+        & .speed-photo {
+            height: auto;
+            width: 100%;
+
+        }
+
+        @media (max-width: $grid-breakpoint-md) {
+            padding-right: 0em;
+
+        }
+
+
+    }
+
+    // .speed__text
+
+    &__text {
+        grid-row: 1;
+        grid-column: 2;
+        align-self: center;
+        line-height: 1.5rem;
+
+        @media (max-width: $grid-breakpoint-md) {
+            grid-row: 2;
+            grid-column: 1;
+            text-align: center;
+        }
+
+    }
+
+    .image {
+
+        // .image__sales
+
+
+        &__sales {
+            position: absolute;
+            z-index: 1;
+            width: 400px;
+            height: 90px;
+            background-color: $pistachio;
+            color: $mainblack;
+            border-radius: 20px;
+            padding: 1em;
+            display: flex;
+            justify-content: space-between;
+            right: -1em;
+            bottom: 50px;
+
+            @media (max-width: $grid-breakpoint-md) {
+
+                width: 90%;
+                margin: auto;
+                position: relative;
+                bottom: initial;
+                right: initial;
+            }
+
+
+
+            & .sales__bold {
+
+                font-weight: bold;
+                font-size: larger;
+
+            }
+
+
+
+        }
+    }
+}
+
+
+
+.text {
+
+    // .text__btn
+
+    &__btn {
+
+
+        &__pistachio {
+            background-color: $pistachio;
+            color: $mainblack;
+            border-radius: 20px;
+            padding: 0.3rem;
+            text-decoration: none;
+        }
+
+
+
+        &__white {
+
+            border: 2px solid $mainblack;
+            border-radius: 20px;
+            padding: 0.3rem;
+            text-decoration: none;
+            color: $mainblack;
+
+            &:hover {
+                background-color: $pistachio;
+                border: none;
+
+            }
+
+        }
+
+
+        &__arrow {
+            background: url(/assets/images/black-arrow.png) center right no-repeat;
+            padding-right: 1.5rem;
+            color: $mainblack;
+            text-decoration: none;
+            margin: 1rem;
+            white-space: nowrap;
+
+            &:hover {
+                border-radius: 20px;
+                padding: 0.5rem;
+
+                background-color: $pistachio;
+            }
+        }
+    }
+}
