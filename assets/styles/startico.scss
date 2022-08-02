@@ -32,7 +32,6 @@ $color-success: $pistachio;
 
 html {
     height: 100%;
-
 }
 
 body {
@@ -447,3 +446,179 @@ header {
         }
     }
 }
+
+/*Startup begin*/
+.startup {
+&__body{
+    width: 80vw;
+    height: 49rem;
+
+    background-color: $pistachio;
+    border-radius: 48px;
+    color: $mainblack;
+    margin: 128px auto;
+    background-image: url(/assets/images/startup-decor.png);
+    background-position: top right;
+    background-repeat: no-repeat;
+}
+&__header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+&__title{
+    width: 40rem;
+    height: 6rem;
+    margin: 127px 0px 27px 0px;
+    font-family: $font-family-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    text-align: center;
+}
+&__text{
+    width: 46.5rem;
+    height: 3.375rem;
+
+    font-family: $font-family-sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+}
+&__row{
+    display: flex;
+    justify-content: center;
+}
+&__column{
+   width: 24vw;
+    max-height: 18.375rem;
+    border-radius: 24px;
+    background-color: $mainblack;
+    color: $white;
+}
+&__column_first{
+    margin: 3.875rem 0rem 3rem 2rem;
+}
+&__column_second {
+    margin: 3.875rem 1rem 3rem 1rem;
+}
+
+&__column_third {
+    margin: 3.875rem 2rem 3rem 0rem;
+}
+
+&__interaction {
+    text-align: center;
+    margin: 0px auto 8rem auto;
+}
+&__button {
+
+    border: 2px solid $mainblack;
+    border-radius: 64px;
+    padding: 1rem;
+    margin: 0 1rem;
+    text-decoration: none;
+    font-family: $font-family-sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    color: $mainblack;
+    &:hover {
+    background-color: $white;
+    }
+}
+&__link {
+    text-decoration: none;
+    white-space: nowrap;
+    margin: 1rem;
+    color: $mainblack;
+    font-family: $font-family-sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+}
+}
+.item-startup {
+text-align: center;
+&__icon_first {
+    width: 5rem;
+    height: 5rem;
+    margin: 2rem auto 1.5rem auto;
+}
+&__icon_second {
+    width: 5rem;
+    height: 5rem;
+    margin: 2rem auto 1.5rem auto;
+}
+&__icon_third {
+    width: 5rem;
+    height: 5rem;
+    margin: 2rem auto 1.5rem auto;
+}
+&__title {
+    font-family: $font-family-serif;
+    font-weight: 400;
+    font-size: 17px;
+    margin: 0rem 0rem 1.06rem 0rem;
+}
+&__text {
+
+    font-style:  $font-family-serif;
+    font-weight: 400;
+    font-size: 15px;
+    margin: 0px 1.25rem 1.9375rem 1.25rem;
+}
+}
+.btn__arrow {
+    background: url(/assets/images/black-arrow.png) center right no-repeat;
+    padding-right: 1.5rem;
+    color: $mainblack;
+    text-decoration: none;
+    margin: 1rem;
+    white-space: nowrap;
+
+    &:hover {
+        border-radius: 20px;
+        padding: 0.5rem;
+    }
+}
+@media screen and (max-width: $screen-medium){
+    .startup{
+
+    &__body{
+    width: 100%;
+    height: 100rem;
+    border-radius: 0px;
+    background-image: none;
+    }
+    &__header{
+    width: 80%;
+    height: 25%;
+    margin: 5rem auto;
+    display: flex;
+    align-content: space-between ;
+    }
+    &__row{
+    height: 60%;
+    flex-wrap: wrap;
+    }
+    &__column{
+    width: 70vw;
+    height:15rem ;
+}
+&__column_first{
+    margin: 3rem;
+}
+&__column_second{
+    margin: 0rem 3rem;
+}
+&__column_third{
+    margin: 3rem;
+}
+&__interaction{
+    margin: 3rem 0rem 3rem 0rem;
+}
+    }
+}
+/*Startup end*/
