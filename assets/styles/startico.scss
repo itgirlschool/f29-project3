@@ -457,7 +457,7 @@ header {
     border-radius: 48px;
     color: $mainblack;
     margin: 128px auto;
-    background-image: url(/assets/images/startup-decor.png);
+    background-image: url(/assets/images/startup-decor.svg);
     background-position: top right;
     background-repeat: no-repeat;
 }
@@ -493,7 +493,7 @@ header {
     justify-content: center;
 }
 &__column{
-   width: 24vw;
+    width: 24vw;
     max-height: 18.375rem;
     border-radius: 24px;
     background-color: $mainblack;
@@ -571,7 +571,7 @@ text-align: center;
 }
 }
 .btn__arrow {
-    background: url(/assets/images/black-arrow.png) center right no-repeat;
+    background: url(/assets/images/black-arrow.svg) center right no-repeat;
     padding-right: 1.5rem;
     color: $mainblack;
     text-decoration: none;
