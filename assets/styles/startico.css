@@ -525,4 +525,10 @@ header {
     justify-content: center;
   }
 }
-/*Startup end*//*# sourceMappingURL=startico.css.map */
+/*Startup end*/
+/*Footer start*/
+.footer {
+  margin: 400px 0px 0px 0px;
+}
+
+/*Footer end*//*# sourceMappingURL=startico.css.map */
