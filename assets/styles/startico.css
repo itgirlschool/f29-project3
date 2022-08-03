@@ -269,12 +269,12 @@ a {
     text-align: center;
   }
 }
-.speed__container_image .image__photo {
+.speed__container_image .speed-image__photo {
   height: auto;
   width: 100%;
 }
 @media (max-width: 768px) {
-  .speed__container_image .image__photo {
+  .speed__container_image .speed-image__photo {
     padding-right: 0em;
   }
 }
@@ -531,7 +531,7 @@ a {
   grid-column: 2;
   position: relative;
 }
-.straight__container_image .straight-photo {
+.straight__container_image .image__photo {
   height: auto;
   width: 100%;
 }
