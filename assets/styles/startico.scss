@@ -659,7 +659,154 @@ text-align: center;
 /*Startup end*/
 
 /*Footer start*/
+.font-size-13px{
+    font-size: 13px;
+}
+.font-size-14px{
+    font-size: 14px;
+}
 .footer{
-    margin: 400px 0px 0px 0px;
+    width: 100%;
+    height: 52.188rem;
+    margin: 620px 0px 0px 0px;
+    background-color: $mainblack;
+    color: $white;
+    font-family: $font-family-sans-serif;
+    font-weight: 400;
+&_up{
+    display: flex;
+    justify-content: center;
+}
+&__main_first{
+    width: 31.2rem;
+    height: 11.188rem;
+    margin:  5rem;
+}
+
+&__link{
+    text-decoration: none;
+    color: $white;
+    margin: 0rem 0rem 1rem 0rem;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+&__links{
+    display: flex;
+    width: 41.599rem;
+    box-sizing: border-box;
+    margin: 5rem 5rem 5rem ;
+    justify-content: space-between;
+}
+&__column_first{
+    height: 29.063rem;
+}
+&__list_first{
+    display: flex;
+    width: 4.688rem;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+&__column_name{
+    font-size: 15px;
+    margin: 0rem 0rem 1.5rem 0rem;
+}
+&__column_second{
+    height: 3.5rem;
+}
+&__list_second{
+    display: flex;
+    width: 6.75rem;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+&__column_third{
+    width: 6.063rem;
+}
+&__list_third{
+    display: flex;
+    width: 4.938rem;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+&__main_second{ 
+}
+&__line{
+    width: 80rem;
+    border: solid 1px #223E4E;
+}
+&__creator{}
+&__social-media{
+    display: flex;
+    width: 8.5rem;
+    height: 2.569rem;
+    justify-content: space-between;
+}
+&__instagram{
+    display: flex;
+    width: 2.5rem;
+    height: 2.563rem;
+    background-color: $pistachio;
+    border-radius: 32px;
+    justify-content: center;
+    align-items: center;
+    
+}
+&__twitter{
+    display: flex;
+    width: 2.5rem;
+    height: 2.563rem;
+    background-color: $pistachio;
+    border-radius: 32px;
+    justify-content: center;
+    align-items: center;
+}
+&__facebook{
+    display: flex;
+    width: 2.5rem;
+    height: 2.563rem;
+    background-color: $pistachio;
+    border-radius: 32px;
+    justify-content: center;
+    align-items: center;
+}
+}
+
+@media screen and (max-width: 715px){
+    .footer{
+        height: 42rem;
+        margin: 2100px 0px 0px 0px;
+        &__links{
+            display: none;
+        }
+        &__line{
+            display: none;
+        }
+        &__main_first{
+            width: 100vw;
+            margin: 1.5rem;
+            text-align: center;
+        }
+        &__main_second{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            text-align: center;
+        }
+        &__creator{
+            width: 80rem;
+            order: 2;
+            margin: 4rem 0;
+        }
+        &____social-media{
+            display: flex;
+            width: 80rem;
+            margin: 0rem auto;
+            order: 1;
+            justify-content: space-between;
+        }
+    }
 }
 /*Footer end*/
