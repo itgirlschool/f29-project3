@@ -122,7 +122,7 @@ a {
 .header__items {
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: flex-end;
   grid-row: 1;
   grid-column: 2;
 }
@@ -692,7 +692,7 @@ a {
   align-content: space-between;
 }
 .footer__line {
-  width: 80rem;
+  width: 100%;
   border: solid 1px #223E4E;
 }
 .footer__social-media {
