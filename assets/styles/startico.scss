@@ -850,9 +850,12 @@ a {
     }
 
     &__main_first {
-        width: 31.2rem;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
+        width: 16.813rem;
         height: 11.188rem;
-        margin: 5rem;
+        margin: 5rem 3rem 5rem 5rem;
     }
 
     &__link {
@@ -903,7 +906,7 @@ a {
     &__column_third {
         width: 6.063rem;
     }
-    
+
     &__list_third {
         display: flex;
         width: 4.938rem;
@@ -983,6 +986,8 @@ a {
         }
 
         &__main_first {
+            display: flex;
+            justify-content: center;
             width: 100vw;
             margin: 1.5rem;
             text-align: center;
