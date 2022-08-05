@@ -47,7 +47,7 @@ a {
 .btn {
     border: 1px solid $mainblack;
     border-radius: 30px;
-    padding: 0.5rem;
+    padding: 0.7rem 1.5rem;
     margin: 0.5rem 1rem;
     text-decoration: none;
     white-space: nowrap;
@@ -314,6 +314,9 @@ a {
     background-position: top right;
     background-repeat: no-repeat;
 
+
+
+
     // .speed__container
 
     &__container {
@@ -327,7 +330,16 @@ a {
         @include media-breakpoint-up($grid-breakpoint-md) {
             grid-template-columns: 1fr 1fr;
             grid-template-rows: 1fr;
+            padding-left: 1em;
+
+
         }
+
+        @media (max-width: $grid-breakpoint-lg) {
+            margin: 1em;
+        }
+
+
 
         // .speed__container_image
 
@@ -340,9 +352,14 @@ a {
 
             @media (max-width: $grid-breakpoint-md) {
                 grid-row: 2;
-                grid-column: 1;
+                grid-column: 1/3;
                 text-align: center;
+                padding-right: 0;
             }
+
+
+
+
 
             & .speed-image__photo {
                 height: auto;
@@ -352,6 +369,8 @@ a {
                     padding-right: 0em;
 
                 }
+
+
 
             }
         }
@@ -365,10 +384,14 @@ a {
             line-height: 1.5rem;
 
             @media (max-width: $grid-breakpoint-md) {
-                grid-column: 1;
+                grid-column: 1/3;
                 grid-row: 1;
                 text-align: center;
+
             }
+
+
+
         }
     }
 }
@@ -390,7 +413,7 @@ a {
         padding: 1em;
         display: flex;
         justify-content: space-between;
-        right: -1em;
+        right: -0.5em;
         bottom: 50px;
 
         @media (max-width: $grid-breakpoint-md) {
@@ -401,6 +424,12 @@ a {
             bottom: initial;
             right: initial;
         }
+
+        @media (max-width: $grid-breakpoint-lg) {
+            width: 70%;
+
+        }
+
 
 
 
@@ -417,7 +446,7 @@ a {
 /*Startup begin*/
 .startup {
     &__body {
-        width: 80vw;
+        width: 85vw;
         height: 49rem;
 
         background-color: $pistachio;
@@ -642,14 +671,13 @@ a {
 
 /*Startup end*/
 
-/*Footer start*/
-.footer {
-    margin: 400px 0px 0px 0px;
-}
-
-/*Footer end*/
-
 .straight {
+
+
+
+
+
+
 
     // .straight__container
 
@@ -661,16 +689,21 @@ a {
         grid-template-rows: 1fr 1fr;
         gap: 2em;
 
+
         @include media-breakpoint-up($grid-breakpoint-md) {
             grid-template-columns: 1fr 1fr;
             grid-template-rows: 1fr;
+            padding-left: 1em;
+
         }
+
+
+
 
         // .straight__container_image
 
         &_image {
             margin: auto;
-            padding-right: 2.5em;
             grid-row: 1;
             grid-column: 2;
             position: relative;
@@ -682,8 +715,7 @@ a {
             }
 
             @media (max-width: $grid-breakpoint-md) {
-                padding-right: 0em;
-                grid-column: 1;
+                grid-column: 1/3;
                 grid-row: 2;
 
             }
@@ -698,7 +730,7 @@ a {
 
             @media (max-width: $grid-breakpoint-md) {
 
-                grid-column: 1;
+                grid-column: 1/3;
                 grid-row: 1;
 
                 text-align: center;
@@ -726,7 +758,7 @@ a {
             display: flex;
             justify-content: space-between;
             bottom: 50px;
-            left: -3.5em;
+            left: -3em;
 
             @media (max-width: $grid-breakpoint-md) {
 
@@ -736,6 +768,11 @@ a {
                 bottom: initial;
                 right: initial;
                 left: initial;
+            }
+
+            @media (max-width: $grid-breakpoint-lg) {
+                width: 70%;
+
             }
 
             // .image__productivity_bold
@@ -781,8 +818,177 @@ a {
             text-align: center;
         }
     }
+}
 
+/*Footer start*/
+.font-size-13px {
+    font-size: 13px;
+}
 
+.font-size-14px {
+    font-size: 14px;
+}
+
+.footer {
+    width: 100%;
+    height: 52.188rem;
+    margin: 620px 0px 0px 0px;
+    background-color: $mainblack;
+    color: $white;
+    font-family: $font-family-sans-serif;
+    font-weight: 400;
+
+    &_up {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__main_first {
+        width: 31.2rem;
+        height: 11.188rem;
+        margin: 5rem;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $white;
+        margin: 0rem 0rem 1rem 0rem;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &__links {
+        display: flex;
+        width: 41.599rem;
+        box-sizing: border-box;
+        margin: 5rem 5rem 5rem;
+        justify-content: space-between;
+    }
+
+    &__column_first {
+        height: 29.063rem;
+    }
+
+    &__list_first {
+        display: flex;
+        width: 4.688rem;
+        flex-wrap: wrap;
+        align-content: space-between;
+    }
+
+    &__column_name {
+        font-size: 15px;
+        margin: 0rem 0rem 1.5rem 0rem;
+    }
+
+    &__column_second {
+        height: 3.5rem;
+    }
+
+    &__list_second {
+        display: flex;
+        width: 6.75rem;
+        flex-wrap: wrap;
+        align-content: space-between;
+    }
+
+    &__column_third {
+        width: 6.063rem;
+    }
+
+    &__list_third {
+        display: flex;
+        width: 4.938rem;
+        flex-wrap: wrap;
+        align-content: space-between;
+    }
+
+    &__line {
+        width: 80rem;
+        border: solid 1px #223E4E;
+    }
+
+    &__social-media {
+        display: flex;
+        width: 8.5rem;
+        height: 2.569rem;
+        justify-content: space-between;
+    }
+
+    &__instagram {
+        display: flex;
+        width: 2.5rem;
+        height: 2.563rem;
+        background-color: $pistachio;
+        border-radius: 32px;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    &__twitter {
+        display: flex;
+        width: 2.5rem;
+        height: 2.563rem;
+        background-color: $pistachio;
+        border-radius: 32px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__facebook {
+        display: flex;
+        width: 2.5rem;
+        height: 2.563rem;
+        background-color: $pistachio;
+        border-radius: 32px;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 715px) {
+    .footer {
+        height: 42rem;
+        margin: 2100px 0px 0px 0px;
+
+        &__links {
+            display: none;
+        }
+
+        &__line {
+            display: none;
+        }
+
+        &__main_first {
+            width: 100vw;
+            margin: 1.5rem;
+            text-align: center;
+        }
+
+        &__main_second {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            text-align: center;
+        }
+
+        &__creator {
+            width: 80rem;
+            order: 2;
+            margin: 4rem 0;
+        }
+
+        &____social-media {
+            display: flex;
+            width: 80rem;
+            margin: 0rem auto;
+            order: 1;
+            justify-content: space-between;
+        }
+    }
 }
 
 
@@ -1311,3 +1517,4 @@ a {
             }
 		}
 }
+/*Footer end*/
