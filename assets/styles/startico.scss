@@ -1021,6 +1021,10 @@ a {
 @media screen and (max-width: $grid-breakpoint-sm){
     .footer{
         height: 30rem;
+        &__main_first{
+           width: 16.68rem;
+           margin: 3rem auto;
+        }
         &_under-line{
             display: flex;
             flex-wrap: wrap;

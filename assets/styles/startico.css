@@ -801,6 +801,10 @@ a {
   .footer {
     height: 30rem;
   }
+  .footer__main_first {
+    width: 16.68rem;
+    margin: 3rem auto;
+  }
   .footer_under-line {
     display: flex;
     flex-wrap: wrap;
