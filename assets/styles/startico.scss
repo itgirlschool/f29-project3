@@ -643,14 +643,19 @@ a {
 @media screen and (max-width: $grid-breakpoint-sm) {
     .startup {
         &__body {
-            height: 127rem;
+            height: 110rem;
         }
 
         &__header {
-            height: 25%;
+            height: 20%;
             width: 90vw;
         }
 
+        &__title{
+            height: 10rem;
+            font-size: 2rem;
+            margin: 3rem 0rem 0rem 0rem;
+        }
         &__column {
             height: 19rem;
             width: 90vw;
@@ -660,9 +665,10 @@ a {
         &__interaction {
             display: flex;
             height: 10rem;
-            margin: 0rem 0rem 3rem 0rem;
+            margin: 3rem 0rem 3rem 0rem;
             flex-wrap: wrap;
             align-content: space-between;
+            align-items: center;
             justify-content: center;
 
         }
@@ -832,7 +838,7 @@ a {
 .footer {
     width: 100%;
     height: 52.188rem;
-    margin: 620px 0px 0px 0px;
+    margin: 100rem 0px 0px 0px;
     background-color: $mainblack;
     color: $white;
     font-family: $font-family-sans-serif;
@@ -844,9 +850,12 @@ a {
     }
 
     &__main_first {
-        width: 31.2rem;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
+        width: 16.813rem;
         height: 11.188rem;
-        margin: 5rem;
+        margin: 5rem 3rem 5rem 5rem;
     }
 
     &__link {
@@ -861,9 +870,9 @@ a {
 
     &__links {
         display: flex;
-        width: 41.599rem;
+        width: 42rem;
         box-sizing: border-box;
-        margin: 5rem 5rem 5rem;
+        margin: 5rem  3rem;
         justify-content: space-between;
     }
 
@@ -904,17 +913,32 @@ a {
         flex-wrap: wrap;
         align-content: space-between;
     }
-
+    &__main_second{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    }
     &__line {
-        width: 100%;
+        display: flex;
+        justify-content: center;
+        width: 87vw;
         border: solid 1px #223E4E;
     }
-
+    &_under-line{
+    width: 87vw;
+    display: flex;
+    justify-content: space-between;
+    }
+    &__creator{
+    width: 21.938rem;
+    margin: 2.625rem 0rem 0rem 0rem;
+    }
     &__social-media {
         display: flex;
         width: 8.5rem;
         height: 2.569rem;
         justify-content: space-between;
+        margin: 2rem 0rem 0rem 0rem;
     }
 
     &__instagram {
@@ -925,7 +949,6 @@ a {
         border-radius: 32px;
         justify-content: center;
         align-items: center;
-
     }
 
     &__twitter {
@@ -963,11 +986,12 @@ a {
         }
 
         &__main_first {
+            display: flex;
+            justify-content: center;
             width: 100vw;
             margin: 1.5rem;
             text-align: center;
         }
-
         &__main_second {
             display: flex;
             flex-wrap: wrap;
@@ -987,6 +1011,23 @@ a {
             margin: 0rem auto;
             order: 1;
             justify-content: space-between;
+        }
+    }
+}
+@media screen and (max-width: $grid-breakpoint-sm){
+    .footer{
+        height: 30rem;
+        &_under-line{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        &__creator{
+            order: 2;
+        }
+        &__social-media{
+            order: 1;
+
         }
     }
 }
