@@ -1,7 +1,6 @@
-
 .screen5 {
     background: #162E3C;
-    width: 100%; 
+    width: 100%;
 }
 
 .nameof {
@@ -24,7 +23,8 @@
     text-align: center;
     color: #FFFFFF;
 }
-.othername{
+
+.othername {
     font-family: 'Space Grotesk';
     font-style: normal;
     font-weight: 400;
@@ -34,6 +34,7 @@
     padding: 10px;
     color: #49616E;
 }
+
 .container {
     width: 35%;
     border: 2px solid #ccc;
@@ -47,11 +48,11 @@
     display: inline-block;
     margin: 50px 5px 10px 100px;
     /* отступы со всех сторон */
-    position: relative; 
-   z-index: 1;
+    position: relative;
+    z-index: 1;
 
 }
-  
+
 
 .container::after {
     content: "";
@@ -71,36 +72,39 @@
 
 .lapa {
     margin-top: 1px;
-    text-align:right; 
-   
+    text-align: right;
+
 }
-.spot{
-    text-align:left; 
+
+.spot {
+    text-align: left;
     padding: 1px;
     margin-top: -10%;
     z-index: 2;
-    position: relative; 
+    position: relative;
 }
 
 
 .rating-mini {
-	display: inline-block;
-	font-size: 10px;
+    display: inline-block;
+    font-size: 10px;
     margin-left: -.36em;
 
 }
+
 .rating-mini span {
-	padding: 0;
+    padding: 0;
     font-size: 0px;
-	color: lightgrey;
+    color: lightgrey;
     margin-right: 0px;
 }
 
-.rating-mini > span:before {
-	content: '★';
+.rating-mini>span:before {
+    content: '★';
 }
-.rating-mini > span.active {
-	color: gold;
+
+.rating-mini>span.active {
+    color: gold;
 }
 
 
@@ -112,40 +116,46 @@
 @media (max-width: 500px) {
     .container {
         text-align: center;
-        width: 100%;
-      
+        max-width: 100%;
+
     }
-  .screen5 {
-    background: #162E3C;
-  }
+
+    .screen5 {
+        background: #162E3C;
+    }
+
     .container img {
         margin: auto;
         float: none;
         display: block;
     }
+
     .img {
         margin: auto;
         float: none;
-        display: block;  
+        display: block;
     }
 }
+
 @media (max-width: 320px) {
     .container {
         text-align: center;
-        width: 100%;
+        max-width: 100%;
     }
-.s
-    .container img {
+
+    .s .container img {
         margin: auto;
         float: none;
         display: block;
     }
+
     .img {
         margin: auto;
         float: none;
-        display: block;  
+        display: block;
     }
 }
+
 .screen8 {
     background: #DDF0A7;
     border-radius: 48px;
@@ -157,7 +167,7 @@
     margin-top: 350px;
     /* position: relative; 
     z-index: 2; */
-   
+
     /* .halffon {
         width: 100%;
         position: relative; 
@@ -165,13 +175,14 @@
         margin-top: 20px;
         padding: 1px;
     } */
- 
+
 
 
 }
-.text1{
+
+.text1 {
     margin: 1px;
-    padding: 15px; 
+    padding: 15px;
     font-family: 'Fraunces';
     font-style: normal;
     font-weight: 400;
@@ -184,7 +195,7 @@
     color: #162E3C;
 }
 
-.text2{
+.text2 {
     padding: -50px;
     font-family: 'Space Grotesk';
     font-style: normal;
@@ -202,20 +213,20 @@
 }
 
 .text3 {
-font-family: 'Space Grotesk';
-font-style: normal;
-font-weight: 400;
-font-size: 11px;
-line-height: 18px;
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 18px;
 
-/* identical to box height, or 164% */
+    /* identical to box height, or 164% */
 
-color: #162E3C;
+    color: #162E3C;
 }
 
 .pala {
     margin-top: 1px;
-    text-align:right;    
+    text-align: right;
 }
 
 
@@ -234,11 +245,11 @@ color: #162E3C;
     line-height: 27px;
 
     text-align: center;
-    background: #162E3C; 
+    background: #162E3C;
     color: #f3f6f8;
 }
 
-.registration__button{
+.registration__button {
     background-color: #FFFFFF;
     border-radius: 24px;
     height: 52px;
@@ -253,7 +264,7 @@ color: #162E3C;
     text-align: center;
     color: #162E3C;
 }
-    
+
 
 
 
@@ -261,44 +272,47 @@ color: #162E3C;
 
 
 @media screen and (max-width: 425px) {
-.screen8{
-    width: 600px;
-    /* height: 100rem; */
-    padding: auto;
-}
-.registration__button{
-    margin: auto;
-    float: none;
-    display: block;
-    width: 40%;
-}
-.subscribe__button {
-    margin: auto;
-    float: none;
-    display: block;
-    width: 200px;
-    height:30px;
-}
-}
-
-@media screen and (max-width: 768px) {
-    .screen8{
-        width: 600px;
+    .screen8 {
+        max-width: 600px;
         /* height: 100rem; */
         padding: auto;
     }
-    .registration__button{
+
+    .registration__button {
         margin: auto;
         float: none;
         display: block;
         width: 40%;
     }
+
     .subscribe__button {
         margin: auto;
         float: none;
         display: block;
         width: 200px;
-        height:30px;
+        height: 30px;
     }
+}
+
+@media screen and (max-width: 768px) {
+    .screen8 {
+        max-width: 600px;
+        /* height: 100rem; */
+        padding: auto;
     }
- 
+
+    .registration__button {
+        margin: auto;
+        float: none;
+        display: block;
+        width: 40%;
+    }
+
+    .subscribe__button {
+        margin: auto;
+        float: none;
+        display: block;
+        width: 200px;
+        height: 30px;
+    }
+}
