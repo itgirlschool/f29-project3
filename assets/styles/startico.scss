@@ -467,7 +467,7 @@ a {
     &__title {
         width: 40rem;
         height: 6rem;
-        margin: 127px 0px 27px 0px;
+        margin: 127px 0 27px 0;
         font-family: $font-family-serif;
         font-style: normal;
         font-weight: 400;
@@ -502,7 +502,7 @@ a {
     }
 
     &__column_first {
-        margin: 3.875rem 0rem 3rem 2rem;
+        margin: 3.875rem 0 3rem 2rem;
     }
 
     &__column_second {
@@ -510,7 +510,7 @@ a {
     }
 
     &__column_third {
-        margin: 3.875rem 2rem 3rem 0rem;
+        margin: 3.875rem 2rem 3rem 0;
     }
 
     &__interaction {
@@ -571,7 +571,7 @@ a {
         font-family: $font-family-serif;
         font-weight: 400;
         font-size: 17px;
-        margin: 0rem 0rem 1.06rem 0rem;
+        margin: 0 0 1.06rem 0;
     }
 
     &__text {
@@ -579,7 +579,7 @@ a {
         font-style: $font-family-serif;
         font-weight: 400;
         font-size: 15px;
-        margin: 0px 1.25rem 1.9375rem 1.25rem;
+        margin: 0 1.25rem 1.9375rem 1.25rem;
     }
 }
 
@@ -589,9 +589,9 @@ a {
         &__body {
             width: 100%;
             height: 110rem;
-            border-radius: 0px;
+            border-radius: 0;
             background-image: none;
-            margin: 0rem auto;
+            margin: 0 auto;
         }
 
         &__header {
@@ -604,12 +604,12 @@ a {
 
         &__title {
             height: 14rem;
-            margin: 3rem 0rem;
+            margin: 3rem 0;
         }
 
         &__text {
             height: 5rem;
-            margin: 0rem 0rem 3rem 0rem;
+            margin: 0 0 3rem 0;
         }
 
         &__row {
@@ -627,7 +627,7 @@ a {
         }
 
         &__column_second {
-            margin: 0rem 3rem;
+            margin: 0 3rem;
         }
 
         &__column_third {
@@ -635,7 +635,7 @@ a {
         }
 
         &__interaction {
-            margin: 3rem 0rem 3rem 0rem;
+            margin: 3rem 0 ;
         }
     }
 }
@@ -651,11 +651,12 @@ a {
             width: 90vw;
         }
 
-        &__title{
+        &__title {
             height: 10rem;
             font-size: 2rem;
-            margin: 3rem 0rem 0rem 0rem;
+            margin: 3rem 0 0 0;
         }
+
         &__column {
             height: 19rem;
             width: 90vw;
@@ -665,7 +666,7 @@ a {
         &__interaction {
             display: flex;
             height: 10rem;
-            margin: 3rem 0rem 3rem 0rem;
+            margin: 3rem 0;
             flex-wrap: wrap;
             align-content: space-between;
             align-items: center;
@@ -837,16 +838,23 @@ a {
 
 .footer {
     width: 100%;
-    height: 52.188rem;
-    margin: 100rem 0px 0px 0px;
+    height: 73.313rem;
+    margin:-15.125rem 0 0 0;
     background-color: $mainblack;
     color: $white;
     font-family: $font-family-sans-serif;
     font-weight: 400;
+    
+
+    &__block_empty{
+        height: 15.125rem;
+    }
 
     &_up {
+        width: 87vw;
+        margin: 0 auto;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
     }
 
     &__main_first {
@@ -855,13 +863,13 @@ a {
         align-content: space-between;
         width: 16.813rem;
         height: 11.188rem;
-        margin: 5rem 3rem 5rem 5rem;
+        margin: 4rem 0 5rem 0;
     }
 
     &__link {
         text-decoration: none;
         color: $white;
-        margin: 0rem 0rem 1rem 0rem;
+        margin: 0 0 1rem 0;
 
         &:hover {
             text-decoration: underline;
@@ -872,7 +880,7 @@ a {
         display: flex;
         width: 42rem;
         box-sizing: border-box;
-        margin: 5rem  3rem;
+        margin: 5rem 0 5rem 15rem;
         justify-content: space-between;
     }
 
@@ -888,8 +896,10 @@ a {
     }
 
     &__column_name {
+        padding: 0;
         font-size: 15px;
-        margin: 0rem 0rem 1.5rem 0rem;
+        margin: 0 0 1.5rem 0;
+        color: $white;
     }
 
     &__column_second {
@@ -913,32 +923,37 @@ a {
         flex-wrap: wrap;
         align-content: space-between;
     }
-    &__main_second{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+
+    &__main_second {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
     }
+
     &__line {
         display: flex;
         justify-content: center;
         width: 87vw;
         border: solid 1px #223E4E;
     }
-    &_under-line{
-    width: 87vw;
-    display: flex;
-    justify-content: space-between;
+
+    &_under-line {
+        width: 87vw;
+        display: flex;
+        justify-content: space-between;
     }
-    &__creator{
-    width: 21.938rem;
-    margin: 2.625rem 0rem 0rem 0rem;
+
+    &__creator {
+        width: 21.938rem;
+        margin: 2.625rem 0 0 0;
     }
+
     &__social-media {
         display: flex;
         width: 8.5rem;
         height: 2.569rem;
         justify-content: space-between;
-        margin: 2rem 0rem 0rem 0rem;
+        margin: 2rem 0 0 0;
     }
 
     &__instagram {
@@ -975,7 +990,7 @@ a {
 @media screen and (max-width: 715px) {
     .footer {
         height: 42rem;
-        margin: 2100px 0px 0px 0px;
+        margin:  0;
 
         &__links {
             display: none;
@@ -992,6 +1007,7 @@ a {
             margin: 1.5rem;
             text-align: center;
         }
+
         &__main_second {
             display: flex;
             flex-wrap: wrap;
@@ -1014,18 +1030,30 @@ a {
         }
     }
 }
-@media screen and (max-width: $grid-breakpoint-sm){
-    .footer{
+
+@media screen and (max-width: $grid-breakpoint-sm) {
+    .footer {
         height: 30rem;
-        &_under-line{
+
+        &__block_empty{
+            display: none;
+        }
+        &__main_first {
+            width: 16.68rem;
+            margin: 3rem auto;
+        }
+
+        &_under-line {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
         }
-        &__creator{
+
+        &__creator {
             order: 2;
         }
-        &__social-media{
+
+        &__social-media {
             order: 1;
 
         }
@@ -1035,14 +1063,14 @@ a {
 /*Footer end*/
 
 
-/*  PRICING // screen 6  */
+/*  PRICING // screen 6 // start */
 .pricing {
     display: grid;
     height: 60rem;
     width: 90vw;
     justify-items: center;
     align-items: end;
-    background-image: url(/assets/images/Wave.svg);
+    background-image: url(/assets/images/waves.svg);
     background-position: 100% top;
     background-repeat: no-repeat;
     margin-top: 4em;
@@ -1394,7 +1422,7 @@ a {
         }
     }
 }
-
+/*  PRICING // screen 6 // end */
 
 
 
@@ -1446,11 +1474,8 @@ p{
     display: inline-block;
     margin: 50px 5px 10px 100px;
     /* отступы со всех сторон */
-   
-  
-   
 }
-  
+
 
 .container::after {
     content: "";
@@ -1471,7 +1496,7 @@ p{
 .lapa {
     margin-top: 1px;
     text-align:right; 
-   
+
 }
 .spot{
     text-align:left; 
@@ -1546,7 +1571,7 @@ p{
     text-align: center;
     margin-left: auto;
     margin-right: auto;
- 
+
 
 
 }
@@ -1633,11 +1658,6 @@ color: #162E3C;
     padding: 1rem;
     color: #050505;  
 }
-    
-
-
-
-
 
 
 @media screen and (max-width: 425px) {
@@ -1645,7 +1665,6 @@ color: #162E3C;
     width: 100%;
     /* height: 100rem; */
 }
-
 }
 
 @media screen and (max-width: 320px) {
@@ -1658,7 +1677,7 @@ color: #162E3C;
         }
     }    
 
-/*  BLOG // screen 7 //  */
+/*  BLOG // screen 7 // start */
 .blog {
     display: grid;
     height: 100vh;
@@ -1874,4 +1893,4 @@ color: #162E3C;
         }
     }
 }
-
+/*  BLOG // screen 7 // end */
