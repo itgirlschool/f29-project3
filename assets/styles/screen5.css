@@ -4,7 +4,7 @@
     width: 100%; 
 }
 
-h2 {
+.nameof {
     font-family: 'Fraunces';
     font-style: normal;
     font-weight: 400;
@@ -24,7 +24,7 @@ h2 {
     text-align: center;
     color: #FFFFFF;
 }
-p{
+.othername{
     font-family: 'Space Grotesk';
     font-style: normal;
     font-weight: 400;
