@@ -845,8 +845,10 @@ a {
     font-weight: 400;
 
     &_up {
+        width: 87vw;
+        margin: 0rem auto;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
     }
 
     &__main_first {
@@ -855,7 +857,7 @@ a {
         align-content: space-between;
         width: 16.813rem;
         height: 11.188rem;
-        margin: 5rem 3rem 5rem 5rem;
+        margin: 4rem 0rem 5rem 0rem;
     }
 
     &__link {
@@ -872,7 +874,7 @@ a {
         display: flex;
         width: 42rem;
         box-sizing: border-box;
-        margin: 5rem  3rem;
+        margin: 5rem  0rem 5rem 15rem;
         justify-content: space-between;
     }
 
@@ -888,8 +890,10 @@ a {
     }
 
     &__column_name {
+        padding: 0rem;
         font-size: 15px;
         margin: 0rem 0rem 1.5rem 0rem;
+        color: $white;
     }
 
     &__column_second {
