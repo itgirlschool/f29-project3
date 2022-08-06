@@ -51,6 +51,7 @@
     /* отступы со всех сторон */
     position: relative;
     z-index: 1;
+    overflow: hidden;
 
 }
 
@@ -82,7 +83,7 @@
     padding: 1px;
     margin-top: -10%;
     z-index: 2;
-    position: relative;
+  
 }
 
 
@@ -158,7 +159,10 @@
 }
 
 .screen8 {
-    background: #DDF0A7;
+    background-image: url(assets/images/pala.svg); /* Путь к фоновому изображению */
+    background-color: #DDF0A7;
+    /* background position: top right; */
+    overflow: hidden;
     border-radius: 48px;
     height: 484px;
     width: 75%;
@@ -171,13 +175,8 @@
     /* position: relative; 
     z-index: 2; */
 
-    /* .halffon {
-        width: 100%;
-        position: relative; 
-        z-index: 1;
-        margin-top: 20px;
-        padding: 1px;
-    } */
+    
+  
 
 
 
@@ -230,6 +229,7 @@
 .pala {
     margin-top: 1px;
     text-align: right;
+    overflow: hidden;
 }
 
 
@@ -237,7 +237,7 @@
 .subscribe__button {
     height: 52px;
     border: 2px solid #162E3C;
-    border-radius: 24px;
+    border-radius: 50px;
     padding: 1rem;
     margin: 0 1rem;
     text-decoration: none;
@@ -254,7 +254,7 @@
 
 .registration__button {
     background-color: #FFFFFF;
-    border-radius: 24px;
+    border-radius: 50px;
     height: 52px;
     width: 500px;
     font-family: 'Space Grotesk';
