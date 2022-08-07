@@ -83,7 +83,7 @@
     padding: 1px;
     margin-top: -10%;
     z-index: 2;
-  
+
 }
 
 
@@ -159,9 +159,11 @@
 }
 
 .screen8 {
-    background-image: url(assets/images/pala.svg); /* Путь к фоновому изображению */
+    background-image: url(../images/pala.svg);
+    /* Путь к фоновому изображению */
     background-color: #DDF0A7;
-    /* background position: top right; */
+    background-position: top right;
+    background-repeat: no-repeat;
     overflow: hidden;
     border-radius: 48px;
     height: 484px;
@@ -175,8 +177,8 @@
     /* position: relative; 
     z-index: 2; */
 
-    
-  
+
+
 
 
 

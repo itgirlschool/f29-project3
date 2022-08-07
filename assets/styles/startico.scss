@@ -77,7 +77,7 @@ a {
 
 
     &__arrow {
-        background: url(/assets/images/black-arrow.svg) center right no-repeat;
+        background: url(../images/black-arrow.svg) center right no-repeat;
         padding-right: 1.5rem;
         border-color: transparent;
 
@@ -87,7 +87,7 @@ a {
         }
 
         &_white {
-            background: url(/assets/images/arrow-right.svg) center right no-repeat;
+            background: url(../images/arrow-right.svg) center right no-repeat;
             color: $white;
 
             &:hover {
@@ -206,7 +206,7 @@ a {
 
 
 .heading {
-    background: url(/assets/images/screen1-bg.svg) no-repeat top center;
+    background: url(../images/screen1-bg.svg) no-repeat top center;
     background-size: contain;
     flex-grow: 1;
     width: 100%;
@@ -289,7 +289,7 @@ a {
     // .video__background
 
     &__background {
-        background: url(/assets/images/foto-girl.png) no-repeat center center;
+        background: url(../images/foto-girl.png) no-repeat center center;
         width: 100%;
         background-size: contain;
         width: 100vw;
@@ -310,7 +310,7 @@ a {
 
 
 .speed {
-    background-image: url(/assets/images/waves.svg);
+    background-image: url(../images/waves.svg);
     background-position: top right;
     background-repeat: no-repeat;
 
@@ -453,7 +453,7 @@ a {
         border-radius: 48px;
         color: $mainblack;
         margin: 128px auto;
-        background-image: url(/assets/images/startup-decor.svg);
+        background-image: url(../images/startup-decor.svg);
         background-position: top right;
         background-repeat: no-repeat;
     }
@@ -1071,7 +1071,7 @@ a {
     width: 90vw;
     justify-items: center;
     align-items: end;
-    background-image: url(/assets/images/waves.svg);
+    background-image: url(../images/waves.svg);
     background-position: 100% top;
     background-repeat: no-repeat;
     margin-top: 4em;
